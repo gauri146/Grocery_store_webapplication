@@ -1,0 +1,128 @@
+
+        body {
+             /* display: flex; */
+            align-items: center;
+            justify-content: center; 
+            padding: 20px;
+            background: rgb(153, 177, 153);
+            text-align: center;
+             /* background-image: url('bgimg.png'); */
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover; 
+            
+            /* opacity: 0.5; */
+        }
+        .container::before{
+            content:"";
+            background-image: url('bgimg.png');
+            opacity:0.5;
+            position:absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            width:auto;
+            height:auto;
+            z-index: -5; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+          }
+          
+          
+        .main{
+            display: flex;
+        }
+        #first{
+            height: 120px;
+            width: 120px;
+            /* align-items: center; */
+            margin-bottom: auto;
+           
+        }
+        .sec{
+            display: flex; 
+            margin-bottom: 20px;
+            }
+        .sec h1{
+            text-decoration: underline;
+            font-size: 400%;
+            color: rgb(35, 136, 10);
+            margin: 5px 5px 0px 0px;
+        }    
+
+        form h1 {
+            color: rgb(4, 68, 29);
+            text-align: center;
+            /* align-items: center; */
+            
+        }
+
+         form {
+            /* border: 2px solid rgb(0, 255, 64); */
+            background-color: rgb(160, 160, 99);
+            width: 50%;
+            height: auto;
+            margin: 5px 50px;
+            /* padding: 10px;  */
+            /* align-items: center; */
+            /* justify-content: center;  */
+            /* display: inline-block; */
+            text-align: center;
+            border-radius: 30px;
+        } 
+
+        .formdesign {
+            padding: 5px;
+            margin: 5px 10px 5px;
+            display: flex;
+            text-align: left;
+            
+        } 
+
+        /* label {
+             margin: 20px; 
+             border: 3px solid black; 
+            width: 100px;
+            display: inline-block;
+            margin-right: 50px;
+
+        } */
+        label {
+            display:inline-block ;
+            width: 150px; /* Adjust the width as needed */
+            text-align: left;
+            margin-left: 5px;
+              /* Adjust the margin as needed */
+          }
+
+        #id {
+            align-items: center;
+        }
+
+        form input {
+            width: 30%;
+            margin: auto ;
+            padding: 10px 40px;
+            border: 1px solid rgb(0, 255, 64);
+        }
+
+        .but{
+            border: 2px solid skyblue;
+            width: 30%;
+            color: rgb(32, 36, 31);
+            background-color: rgb(135, 255, 36);
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        #but{
+            margin-top: 30px;
+        }
+
+        .formerror {
+            color: red;
+            padding: 10px
+        }

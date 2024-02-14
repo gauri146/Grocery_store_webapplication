@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <marquee behavior="alternate" direction="left">
+            <div class="sec">
+                <img src="gc.png" alt="Natural" id="first" />
+                <h1>Welcome to our shop </h1>
+                <img src="gc.png" alt="Natural" id="first" />
+            </div>
+        </marquee>
+        <!-- <img src="gc.png" alt="grocery logo"> -->
+        <div class="main">
+            <form aciton="mainpag.html" id="form" name="myForm" onsubmit="return validateForm(event)" method="post">
+
+                <h1 aling="center">REGISTER YOURSELF</h1>
+                <div class="formdesign" id="name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="fname" required placeholder="enter your name"><b><span class="formerror">
+                        </span></b>
+                </div>
+
+                <div class="formdesign" id="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="femail" required placeholder="enter email id"><b><span class="formerror">
+                        </span></b>
+                </div>
+
+                <div class="formdesign" id="phone">
+                    <label for="phone">Phone:</label>
+                    <input type="phone" name="fphone" required placeholder="enter mobile number"><b><span
+                            class="formerror"></span></b>
+                </div>
+
+                <div class="formdesign" id="pass">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="fpass" required placeholder="enter password"><b><span
+                            class="formerror"></span></b>
+                </div>
+
+                <div class="formdesign" id="cpass">
+                    <label for="c_pass">Confirm Password:</label>
+                    <input type="password" name="fcpass" required placeholder="Confirm password"><b><span
+                            class="formerror"></span></b>
+                </div>
+
+                <input class="but" type="submit" value="Submit" name="fsubmit" onclick="validateForm()">
+
+            </form>
+
+
+             <!-- login form start here -->
+
+
+
+            <form aciton="/myaction.php" name="myForm" id="form" onsubmit="return validateForm(event)" method="post">
+                <!-- <img src="gc.png" alt="grocery logo"> -->
+                <h1 aling="center">LOGIN YOURSELF</h1>
+                <div class="formdesign" id="name">
+                    <label for="name_n">Name:</label>
+                    <input type="text" name="f_name" required placeholder="enter your name"><b><span class="formerror">
+                        </span></b>
+                </div>
+
+
+                <div class="formdesign" id="pass">
+                    <label for="pass_p">Password:</label>
+                    <input type="password" name="f_pass" required placeholder="enter password"><b><span
+                            class="formerror"></span></b>
+                </div>
+                <input class="but" id="but" type="submit" value="LOGIN" onclick="redirect()">
+
+            </form>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+
+</html>
